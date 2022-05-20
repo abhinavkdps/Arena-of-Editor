@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      h4{
+        display: flex;
+        flex-direction: row;
+      }
+      h4:before,
+      h4:after{
+        content: " ";
+        flex: 1 1;
+        border-bottom: 1px solid #000000;
+        margin: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+    </style>
+</head>
+<body>
+    <div class="split left">
+        <div class="centered">
+          <h1 style="color: white;">Connect with us and get some beautiful pictures and videos ready for editing.</h1>
+        </div>
+        <a href="#" class="back-button" style="text-decoration: none;font-weight: bold;">
+            <i class="icon-back">
+                &#8617;
+            </i>
+        </a>
+      </div>
+      
+      <div class="split right">
+        <form action="action_page.php" method="post">
+           
+            <div class="bcontainer">
+                <h1>Sign in to Arena</h1>
+                <button type="button" class="fa fa-facebook"> Sign in with Facebook</button>
+                <button type="button" class="fa fa-google"> Sign in with Google</button>
+                <button type="button" class="fa fa-twitter"> Sign in with Twitter</button>
+            </div>
+
+            <h4> or via E-mail</h4>
+    
+            <div class="container">
+              <label for="uname"><b>E-mail ID</b></label>
+              <input type="text" placeholder="Enter E-mail" name="uname" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <span class="psw"><a href="#" style="color: black;">Forgot password?</a></span>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+              <button type="submit">Sign in</button>    
+              
+            </div>
+            </form>
+            <div class="signup">Don't have an account? <a href="#" style="color: black;text-decoration: none;font-weight: bold;">Join Now</a></div>
+      </div>
+</body>
+</html>
